@@ -42,8 +42,8 @@
 #define X_MAX_PIN          22//24
 #define Y_MIN_PIN          28//26
 #define Y_MAX_PIN          26//28
-#define Z_MIN_PIN          30//30
-#define Z_MAX_PIN          32//32
+#define Z_MIN_PIN          32//30
+#define Z_MAX_PIN          30//32
 
 //
 // Steppers
