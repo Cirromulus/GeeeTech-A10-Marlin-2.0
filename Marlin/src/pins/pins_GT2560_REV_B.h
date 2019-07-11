@@ -95,6 +95,12 @@
 #define SUICIDE_PIN        54 //ok  // Must be enabled at startup to keep power flowing
 #define KILL_PIN           -1 //ok
 
+#if ENABLED(BLTOUCH)
+  #define SERVO0_PIN  30
+#else
+  #define SERVO0_PIN  30
+#endif
+
 #if ENABLED(ULTRA_LCD)
 
   #define BEEPER_PIN       18 //ok
