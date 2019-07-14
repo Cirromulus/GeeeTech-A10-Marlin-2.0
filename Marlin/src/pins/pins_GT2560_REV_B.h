@@ -71,7 +71,7 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN          11//8
+#define TEMP_0_PIN         11//8
 #define TEMP_1_PIN          9//9
 #define TEMP_BED_PIN       10//10
 
@@ -79,10 +79,10 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN        10//2
-#define HEATER_1_PIN        3//3
-#define HEATER_BED_PIN      4//4
+#define HEATER_1_PIN         3//3
+#define HEATER_BED_PIN       4//4
 #ifndef FAN_PIN
-  #define FAN_PIN           9//7
+  #define FAN_PIN            9//7
 #endif
 
 //
@@ -90,7 +90,7 @@
 //
 #define SDPOWER            -1 //ok
 #define SDSS               53 //ok
-#define LED_PIN            6  //13
+#define LED_PIN             6 //13
 #define PS_ON_PIN          12 //ok
 #define SUICIDE_PIN        54 //ok  // Must be enabled at startup to keep power flowing
 #define KILL_PIN           -1 //ok
@@ -118,7 +118,7 @@
       #define LCD_PINS_D4  16 //ok
       #define LCD_PINS_D5  21 //ok
       #define LCD_PINS_D6   5 //ok
-      #define LCD_PINS_D7   36 //6
+      #define LCD_PINS_D7  36 //6
       #define BTN_EN1      42 //ok
       #define BTN_EN2      40 //ok
     #endif
