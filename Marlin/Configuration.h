@@ -642,8 +642,9 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 436 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 93 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 436 }    //I dunno where these values are from
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 93 }     //pre-geared extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 425 }
 
 /**
  * Default Max Feed Rate (mm/s)
