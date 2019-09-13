@@ -1,3 +1,6 @@
+This Repo contains tuned parameters for a modified GeeeTech A10 printer.
+
+
 # Marlin 3D Printer Firmware
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=RCBugFix)](https://travis-ci.org/MarlinFirmware/Marlin)
