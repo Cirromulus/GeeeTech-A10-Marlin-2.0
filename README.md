@@ -1,4 +1,5 @@
 This Repo contains tuned parameters for a modified GeeeTech A10 printer.
+_See original README below._
 
 
 # Marlin 3D Printer Firmware
