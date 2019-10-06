@@ -122,6 +122,8 @@ tags
 .clang_complete
 .gcc-flags.json
 /lib/
+.travis.yml
+.circleci/
 
 # Workaround for Deviot+platformio quirks
 Marlin/lib
