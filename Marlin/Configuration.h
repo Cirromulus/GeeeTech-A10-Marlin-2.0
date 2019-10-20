@@ -481,8 +481,8 @@
  * Prevent a single extrusion longer than EXTRUDE_MAXLENGTH.
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
-#define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+//#define PREVENT_LENGTHY_EXTRUDE
+//#define EXTRUDE_MAXLENGTH 200
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -590,7 +590,9 @@
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
-#define E0_DRIVER_TYPE TMC2208_STANDALONE
+// FIXME: I broke the stepper-driver :(
+    //#define E0_DRIVER_TYPE TMC2208_STANDALONE
+#define E0_DRIVER_TYPE A4988
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -642,16 +644,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 436 }    //I dunno where these values are from
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 93 }     //pre-geared extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 425 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 202.4 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 8, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 400, 8, 80 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -659,7 +659,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3500, 3500, 100, 1000 }
+#define DEFAULT_MAX_ACCELERATION      { 3500, 3500, 100, 1000}
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -891,7 +891,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
