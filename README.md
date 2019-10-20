@@ -1,4 +1,8 @@
 This Repo contains tuned parameters for a modified GeeeTech A10 printer.
+Main differences:
+- Geared Extruder
+- BLTouch
+
 _See original README below._
 
 
