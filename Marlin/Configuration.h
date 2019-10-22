@@ -590,9 +590,7 @@
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
-// FIXME: I broke the stepper-driver :(
-    //#define E0_DRIVER_TYPE TMC2208_STANDALONE
-#define E0_DRIVER_TYPE A4988
+#define E0_DRIVER_TYPE TMC2130_STANDALONE
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -644,7 +642,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 202.4 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 200 }
 
 /**
  * Default Max Feed Rate (mm/s)
