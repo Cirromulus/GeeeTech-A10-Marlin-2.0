@@ -810,7 +810,7 @@
  *      O-- FRONT --+
  *    (0,0)
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER  16    // X offset: -left  +right  [of the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER  15    // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -35    // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER  -0.88 // Z offset: -below +above  [the nozzle]
 
@@ -1109,7 +1109,7 @@
   //=================================== Mesh ==================================
   //===========================================================================
 
-  #define MESH_INSET 10          // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 5          // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 3    // Don't use more than 7 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
